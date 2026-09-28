@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="A personal learning workspace for AI, Java algorithms, system design, and databases.">
+  <title>Commonplace — Your learning workspace</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232c6656'/%3E%3Cpath d='M10 11h8a4 4 0 0 1 4 4v16a8 8 0 0 0-5-2h-7zm20 0h-5v18h5z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="curriculum.js"></script>
+  <script defer src="ai.js"></script>
+  <script defer src="dsa.js"></script>
+  <script defer src="system.js"></script>
+  <script defer src="sql.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside id="sidebar" class="sidebar" aria-label="Workspace navigation"></aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="breadcrumb"><button class="icon-button mobile-menu" data-action="menu" aria-label="Toggle navigation">☰</button><span id="breadcrumbs">Workspace / Overview</span></div>
+      <div class="top-actions"><span id="save-indicator" class="save-indicator">Saved on this browser</span><button class="search-trigger" data-action="search" aria-label="Search curriculum and notes"><span>Search anything</span><kbd>Ctrl K</kbd></button></div>
+    </header>
+    <div id="storage-warning" class="storage-warning" hidden></div>
+    <main id="main" tabindex="-1"></main>
+    <footer class="app-footer">A little progress, every day. <span>Your own space to learn, connect, and grow.</span></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <noscript>This learning workspace needs JavaScript enabled to save notes and track progress.</noscript>
+</body>
+</html>
